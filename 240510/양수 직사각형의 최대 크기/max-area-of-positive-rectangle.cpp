@@ -17,7 +17,7 @@ int main() {
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
 
-            if(arr[i][j] < 0){
+            if(arr[i][j] <= 0){
                 continue;
             }
             
@@ -30,7 +30,7 @@ int main() {
 
                     for(int s = i; s<i+c; s++){
                         for(int w = j; w<j+r; w++){
-                            if(arr[s][w] < 0){
+                            if(arr[s][w] <= 0){
                                 isOk = false;
                                 break;
                             }
