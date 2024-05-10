@@ -39,7 +39,6 @@ int main() {
 
                     if(isOk){
                         mx = std::max( mx , c*r);
-                        std::cout << i << ' ' << j << ' ' << i+c << ' ' << j+r << std::endl;
                     }
 
 
