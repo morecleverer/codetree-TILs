@@ -30,7 +30,7 @@ int main() {
 
                     for(int s = i; s<i+c; s++){
                         for(int w = j; w<j+r; w++){
-                            if(arr[s][j] < 0){
+                            if(arr[s][w] < 0){
                                 isOk = false;
                                 break;
                             }
@@ -39,6 +39,7 @@ int main() {
 
                     if(isOk){
                         mx = std::max( mx , c*r);
+                        std::cout << i << ' ' << j << ' ' << i+c << ' ' << j+r << std::endl;
                     }
 
 
@@ -54,8 +55,9 @@ int main() {
 
         }
     }
-
-    std::cout << mx;
-
+    if(mx > 0)
+        std::cout << mx;
+    else
+        std::cout << -1;
     return 0;
 }
